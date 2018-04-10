@@ -12,35 +12,36 @@ public class userinput {
 	public static void main(String[] args) throws ParseException {
 
 		Date givenDate = askDate();
+		String horoskooppi;
 
 		if (vesimies(givenDate)) {
-			System.out.println("Vesimies");
+			horoskooppi = "Vesimies";
 		} else if (kalat(givenDate)) {
-			System.out.println("Kalat");
+			horoskooppi = "Kalat";
 		} else if (oinas(givenDate)) {
-			System.out.println("Oinas");
+			horoskooppi = "Oinas";
 		} else if (harka(givenDate)) {
-			System.out.println("Härkä");
+			horoskooppi = "Härkä";
 		} else if (kaksonen(givenDate)) {
-			System.out.println("Kaksonen");
+			horoskooppi = "Kaksonen";
 		} else if (rapu(givenDate)) {
-			System.out.println("Rapu");
+			horoskooppi = "Rapu";
 		} else if (leijona(givenDate)) {
-			System.out.println("Leijona");
+			horoskooppi = "Leijona";
 		} else if (neitsyt(givenDate)) {
-			System.out.println("Neitsyt");
+			horoskooppi = "Neitsyt";
 		} else if (vaaka(givenDate)) {
-			System.out.println("Vaaka");
+			horoskooppi = "Vaaka";
 		} else if (skorpioni(givenDate)) {
-			System.out.println("Skorpioni");
+			horoskooppi = "Skorpioni";
 		} else if (jousimies(givenDate)) {
-			System.out.println("Jousimies");
+			horoskooppi = "Jousimies";
 		} else {
-			System.out.println("Kauris");
+			horoskooppi = "Kauris";
 		} 
 		
+		System.out.println(horoskooppi);
 		
-        
 	}//main
 	
 	public static Date askDate() throws ParseException {
@@ -188,5 +189,5 @@ public class userinput {
 	    boolean validHoroscope = !(givenDate.before(startDate) || givenDate.after(endDate));
 	    return validHoroscope;    
 	}
-
+//------------------------------------------------------------------------------------------------------------------------------------------------
 }
