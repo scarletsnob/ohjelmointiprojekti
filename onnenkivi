@@ -1,0 +1,117 @@
+// Java program to display astrological sign
+// or Zodiac sign for given date of birth
+import java.io.*;
+import java.util.Scanner;
+class GFG {
+     
+    static void zodiac_sign(int day, String month)
+    {
+        String astro_sign="";
+         
+        // checks month and date within the 
+        // valid range of a specified zodiac
+        if (month == "joulukuu"){
+             
+            if (day < 22)
+            astro_sign = "Jousimies – Onnen kivesi on Kalsedoni/Turkoosi";
+            else
+            astro_sign ="Kauris – Onnen kivesi on Jaspis/Onyks";
+        }
+             
+        else if (month == "tammikuu"){
+            if (day < 20)
+            astro_sign = "Kauris – Onnen kivesi on Jaspis/Onyks";
+            else
+            astro_sign = "Vesimies - Onnen kivesi on Haukansilmä/Turkoosi";
+        }
+             
+        else if (month == "helmikuu"){
+            if (day < 19)
+            astro_sign = "Vesimies - Onnen kivesi on Haukansilmä/Turkoosi";
+            else
+            astro_sign = "Kalat - Onnen kivesi on Ametisti/Krysopaasi";
+        }
+             
+        else if(month == "maaliskuu"){
+            if (day < 21) 
+            astro_sign = "Kalat - Onnen kivesi on Ametisti/Krysopaasi";
+            else
+            astro_sign = "Oinas – Onnen kivesi on Jaspis/Karneoli";
+        }
+        else if (month == "huhtikuu"){
+            if (day < 20)
+            astro_sign = "Oinas – Onnen kivesi on Jaspis/Karneoli";
+            else
+            astro_sign = "Härkä - Onnen kivesi on Karneoli/Ruusukvartsi";
+        }
+             
+        else if (month == "toukokuu"){
+            if (day < 21)
+            astro_sign = "Härkä - Onnen kivesi on Karneoli/Ruusukvartsi";
+            else
+            astro_sign = "Kaksonen - Onnen kivesi on Sitriini/Tiikerinsilmä";
+        }
+             
+        else if( month == "kesäkuu"){
+            if (day < 21)
+            astro_sign = "Kaksonen - Onnen kivesi on Sitriini/Tiikerinsilmä";
+            else
+            astro_sign = "Rapu – Onnen kivesi on Karneoli/Vihreä aventuriini";
+        }
+             
+        else if (month == "heinäkuu"){
+            if (day < 23)
+            astro_sign = "Rapu – Onnen kivesi on Karneoli/Vihreä aventuriini";
+            else
+            astro_sign = "Leijona – Onnen kivesi on Spektroliitti/Vuorikide";
+        }
+             
+        else if( month == "elokuu"){
+            if (day < 23) 
+            astro_sign = "Leijona – Onnen kivesi on Spektroliitti/Vuorikide";
+            else
+            astro_sign = "Neitsyt – Onnen kivesi on Akaatti/Sitriini";
+        }
+             
+        else if (month == "syyskuu"){
+            if (day < 23)
+            astro_sign = "Neitsyt – Onnen kivesi on Akaatti/Sitriini";
+            else
+            astro_sign = "Vaaka – Onnen kivesi on Kalsedoni/Savukvartsi/opaali";
+        }
+             
+        else if (month == "lokakuu"){
+            if (day < 23)
+            astro_sign = "Vaaka – Onnen kivesi on Kalsedoni/Savukvartsi/opaali";
+            else
+            astro_sign = "Skorpioni – Onnen kivesi on Karneoli/Sitriini";
+        }
+             
+        else if (month == "marraskuu"){
+            if (day < 22)
+            astro_sign = "Skorpioni – Onnen kivesi on Karneoli/Sitriini";
+            else
+            astro_sign = "Jousimies – Onnen kivesi on Kalsedoni/Turkoosi";
+        }
+             
+        System.out.println(astro_sign);
+    }
+         
+    // Driver code 
+    public static void main (String[] args) 
+    {
+// Tähän pitäis saada lukija johon kirjoitetaan se päivä ja kk
+//    	vielä kesken...
+//		System.out.println("Anna kokonaisluku: ");
+//		int day = lukija.nextInt();
+		
+//		System.out.println("Anna kuukausi ");
+//		String month = lukija.nextString();
+		
+//    {
+         int day = 9;
+        String month = "toukokuu";
+        zodiac_sign(day, month);
+             
+    }
+}
