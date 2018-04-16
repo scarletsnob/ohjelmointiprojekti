@@ -16,7 +16,7 @@ public class HaeMerkkijono {
 		Scanner in = new Scanner(new FileReader(horoskooppi + ".txt"));
 		StringBuilder sb = new StringBuilder();
 		while(in.hasNext()) {
-		    sb.append(in.next());
+		    sb.append(in.next() + " ");
 		}
 		in.close();
 		outString = sb.toString();
