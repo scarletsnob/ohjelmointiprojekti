@@ -1,0 +1,17 @@
+import java.util.Random;
+
+public class randomKivi
+{
+    public static void main(String[] args)
+	{
+        String[] objects = { "Haukansilmä/Turkoosi", "Ametisti/Krysopaasi", "Karneoli/Ruusukvartsi", "Sitriini/Tiikerinsilmä", "Karneoli/Vihreä aventuriini", "Spektroliitti/Vuorikide", "Akaatti/Sitriini", "Kalsedoni/Savukvartsi/aventuriini/timantti/", "Karneoli/Sitriini", "Kalsedoni/Turkoosi", "Jaspis/Onyks" };
+
+        int length = objects.length;
+
+       int rand = (int) (Math.random() * length);
+
+            System.out.print(objects[rand]);
+
+            System.out.print(" ");
+        }
+    }
